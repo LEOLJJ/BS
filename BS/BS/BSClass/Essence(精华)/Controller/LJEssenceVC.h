@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  LJEssenceController.h
 //  BS
 //
 //  Created by 俊哥哥 on 2016/12/4.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface LJEssenceVC : UIViewController
 
 @end
-

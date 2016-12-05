@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "LJTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,18 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    //创建一个窗口
+    UIWindow *window = [[UIWindow alloc]init];
+    self.window = window;
+    
+    //创建一个根控制器
+    LJTabBarController * bar = [[LJTabBarController alloc]init];
+    window.rootViewController = bar;
+    
+    //显示窗口
+    [window makeKeyAndVisible];
+    
+    
     return YES;
 }
 
